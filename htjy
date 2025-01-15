@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mindset Marketing: The Psychology Behind Business Success</title>
+    
+    <!-- Meta Tags -->
+    <meta name="description" content="Discover the psychology secrets behind successful marketing. Free guide to understanding how people think, decide, and buy.">
+    
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        /* Reset and Base Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            line-height: 1.6;
+            color: #333333;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+<body>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1 class="fade-in">Mindset Marketing: The Psychology Behind Business Success</h1>
+            <p class="fade-in">Tired of watching your competitors win while your marketing falls flat?</p>
+            <div class="hero-text fade-in">
+                <p>It's not your product.</p>
+                <p>It's not your price.</p>
+                <p>It's not even your marketing budget.</p>
+                <p><strong>It's psychology.</strong></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Problem Section -->
+    <section class="problem">
+        <div class="container">
+            <div class="problem-box fade-in">
+                <p>Most businesses are doing everything "right":</p>
+                <ul class="problem-list">
+                    <li>Posting on social media daily</li>
+                    <li>Running expensive ads</li>
+                    <li>Creating endless content</li>
+                    <li>Working harder than ever</li>
+                </ul>
+                <p class="emphasis">Yet somehow... nothing works.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+        <div class="container">
+            <div class="features-box fade-in">
+                <h2>In This FREE Guide, You'll Discover:</h2>
+                <ul class="features-list">
+                    <li>Why most businesses fail (and how to avoid it)</li>
+                    <li>The hidden triggers that make people buy</li>
+                    <li>How to build instant trust with any audience</li>
+                    <li>Simple systems you can implement today</li>
+                </ul>
+                <div class="features-subtext">
+                    <p>No complex theories.</p>
+                    <p>No fancy jargon.</p>
+                    <p>Just practical psychology you can use immediately.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Target Audience Section -->
+    <section class="target">
+        <div class="container">
+            <h2 class="fade-in">Who Is This Guide For?</h2>
+            <ul class="target-list fade-in">
+                <li>Small business owners wanting more sales</li>
+                <li>Entrepreneurs tired of wasting money on ads</li>
+                <li>Marketing teams looking for better results</li>
+                <li>Anyone ready to understand why people really buy</li>
+            </ul>
+            <div class="target-emphasis fade-in">
+                <p>This isn't another "marketing tips" guide.</p>
+                <p>This is about understanding how people think, decide, and buy.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta">
+        <div class="container">
+            <h2 class="fade-in">Get Instant Access</h2>
+            <p class="fade-in">Enter your email below to download your free copy now.</p>
+            <div class="form-group fade-in">
+                <form id="downloadForm">
+                    <input type="email" placeholder="Enter your email address" required>
+                    <button type="submit">Download Free Guide</button>
+                </form>
+                <div class="form-success">Thank you! Check your email for your free guide.</div>
+                <div class="form-error">Oops! Something went wrong. Please try again.</div>
+            </div>
+            <p class="urgency fade-in">Don't let another day of ineffective marketing hurt your business.<br>
+            Get the psychology insights you need - 100% free.</p>
+        </div>
+    </section>
+
+    <!-- JavaScript - Add this just before closing body tag -->
+    <script>
+        // Fade-in animation
+        document.addEventListener('DOMContentLoaded', function() {
+            const fadeElements = document.querySelectorAll('.fade-in');
+            
+            const observer = new IntersectionObserver(entries => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                    }
+                });
+            });
+
+            fadeElements.forEach(element => {
+                observer.observe(element);
+            });
+        });
+
+        // Form handling
+        document.getElementById('downloadForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const email = this.querySelector('input[type="email"]').value;
+            const successMessage = document.querySelector('.form-success');
+            const errorMessage = document.querySelector('.form-error');
+            
+            // Here you would typically send the email to your server
+            // This is a simple example - replace with your actual form handling
+            try {
+                // Simulate API call
+                setTimeout(() => {
+                    successMessage.style.display = 'block';
+                    errorMessage.style.display = 'none';
+                    this.reset();
+                    
+                    // Here you would typically redirect to the download or thank you page
+                    // window.location.href = 'thank-you.html';
+                }, 1000);
+            } catch (error) {
+                errorMessage.style.display = 'block';
+                successMessage.style.display = 'none';
+            }
+        });
+    </script>
+</body>
+</html>
